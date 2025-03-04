@@ -1,0 +1,30 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      3
+      1 9 2
+    out: |
+      Fennec
+  - name: sample2
+    in: |
+      2
+      25 29
+    out: |
+      Snuke
+  - name: sample3
+    in: |
+      6
+      1 9 2 25 2 9
+    out: |
+      Snuke
+
+extend:
+  - type: Text
+    path: "./b"
+    in: /in/*.txt
+    out: /out/*.txt

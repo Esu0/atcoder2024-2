@@ -1,0 +1,39 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      3 11
+      1 2 5
+    out: |
+      Yes
+      1+2x5
+  - name: sample2
+    in: |
+      5 2
+      1 1 1 1 1
+    out: |
+      Yes
+      1+1x1x1x1
+  - name: sample3
+    in: |
+      2 12
+      1 2
+    out: |
+      No
+  - name: sample4
+    in: |
+      6 302934
+      614 490 585 613 420 945
+    out: |
+      Yes
+      420+490x613+585+614+945
+
+extend:
+  - type: Text
+    path: "./h"
+    in: /in/*.txt
+    out: /out/*.txt

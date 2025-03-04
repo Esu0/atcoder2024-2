@@ -1,10 +1,11 @@
 import random
 
-n = 1000000
+n,k=15,14
+
 print(n)
+print(k)
 for _ in range(n):
-    print(['R', 'G', 'B'][random.randint(0, 2)], end="")
-print()
-for _ in range(n):
-    print(['R', 'G', 'B'][random.randint(0, 2)], end="")
-print()
+    x = random.randint(0, 1000)
+    y = random.randint(0, 1000)
+    print(x)
+    print(y)
