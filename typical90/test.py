@@ -1,11 +1,12 @@
 import random
 
-n,k=15,14
+r = random.randint(1, 7)
+g = random.randint(1, 7)
+b = random.randint(1, 7)
+k = random.randint(1, r + g + b)
+x = random.randint(0, min(r + g, k))
+y = random.randint(0, min(k, g + b))
+z = random.randint(0, min(k, b + r))
 
-print(n)
-print(k)
-for _ in range(n):
-    x = random.randint(0, 1000)
-    y = random.randint(0, 1000)
-    print(x)
-    print(y)
+print(f"{r} {g} {b} {k}")
+print(f"{x} {y} {z}")

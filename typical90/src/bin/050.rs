@@ -1,14 +1,12 @@
 use proconio::input;
 use util::ModInt;
-type MInt = ModInt::<1000000007>;
+type MInt = ModInt<1000000007>;
 
 macro_rules! chsum {
-    ($d:expr, $s:expr) => {
-        {
-            let tmp = $d + $s;
-            $d = tmp;
-        }
-    };
+    ($d:expr, $s:expr) => {{
+        let tmp = $d + $s;
+        $d = tmp;
+    }};
 }
 fn main() {
     input! {

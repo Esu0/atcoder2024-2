@@ -45,5 +45,4 @@ fn main() {
         ans.reverse();
         println!("{}", std::str::from_utf8(&ans).unwrap());
     }
-
 }

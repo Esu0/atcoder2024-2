@@ -1,6 +1,6 @@
 use proconio::input;
 use util::ModInt;
-type MInt = ModInt::<1000000007>;
+type MInt = ModInt<1000000007>;
 
 fn main() {
     input! {

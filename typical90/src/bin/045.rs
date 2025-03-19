@@ -19,7 +19,9 @@ fn main() {
     for i in 0..n {
         dp[1 << i][1] = 0;
     }
-    let mut indice = (1usize..1 << n).map(|i| (i, i.count_ones())).collect::<Vec<_>>();
+    let mut indice = (1usize..1 << n)
+        .map(|i| (i, i.count_ones()))
+        .collect::<Vec<_>>();
     indice.sort_unstable_by_key(|x| x.1);
 
     let mut dists = vec![0; 1 << n];

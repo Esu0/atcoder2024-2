@@ -22,7 +22,9 @@ fn main() {
     }
 
     let mut res = (0..100000).collect::<Vec<_>>();
-    let mut base = (0..100000).map(|x| (digsum(x) + x) % 100000).collect::<Vec<_>>();
+    let mut base = (0..100000)
+        .map(|x| (digsum(x) + x) % 100000)
+        .collect::<Vec<_>>();
     let mut k = k;
     let mut buf1 = vec![0; 100000];
     let mut buf2 = vec![0; 100000];

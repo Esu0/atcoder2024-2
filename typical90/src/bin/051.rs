@@ -30,7 +30,9 @@ fn main() {
     }
 
     let half = n / 2;
-    let popcount = (0..1u32 << (n - half)).map(|s| s.count_ones() as usize).collect::<Vec<_>>();
+    let popcount = (0..1u32 << (n - half))
+        .map(|s| s.count_ones() as usize)
+        .collect::<Vec<_>>();
     let mut sums1 = vec![vec![]; k + 1];
     for s in 0..1usize << half {
         let mut sum = 0;

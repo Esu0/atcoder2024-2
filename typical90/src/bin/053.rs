@@ -1,6 +1,6 @@
 use proconio::input_interactive;
-use std::sync::atomic::{AtomicU8, Ordering::*};
 use std::io::Write;
+use std::sync::atomic::{AtomicU8, Ordering::*};
 
 static Q: AtomicU8 = AtomicU8::new(0);
 
@@ -25,7 +25,9 @@ fn main() {
         t: usize,
     }
 
-    let magic = [1usize, 2, 4, 7, 12, 20, 33, 54, 88, 143, 232, 376, 609, 986, 1596];
+    let magic = [
+        1usize, 2, 4, 7, 12, 20, 33, 54, 88, 143, 232, 376, 609, 986, 1596,
+    ];
     for _ in 0..t {
         Q.store(0, Relaxed);
         input_interactive! { n: usize }

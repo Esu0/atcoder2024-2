@@ -36,5 +36,4 @@ fn main() {
     }
 
     dist.iter().for_each(|&di| println!("{}", di as isize));
-
 }

@@ -111,7 +111,7 @@ dependencies = [
 [[package]]
 name = "segtree"
 version = "0.1.0"
-source = "git+https://github.com/Esu0/mylib-rust.git#d60c44943a012d7a761321f5b27de6a0fc237143"
+source = "git+https://github.com/Esu0/mylib-rust.git#4439a7c7d66ec26115fc0d2ed98138516eea22c3"
 
 [[package]]
 name = "syn"
@@ -155,12 +155,12 @@ checksum = "adb9e6ca4f869e1180728b7950e35922a7fc6397f7b641499e8f3ef06e50dc83"
 [[package]]
 name = "union-find"
 version = "0.1.0"
-source = "git+https://github.com/Esu0/mylib-rust.git#d60c44943a012d7a761321f5b27de6a0fc237143"
+source = "git+https://github.com/Esu0/mylib-rust.git#4439a7c7d66ec26115fc0d2ed98138516eea22c3"
 
 [[package]]
 name = "util"
 version = "0.1.0"
-source = "git+https://github.com/Esu0/mylib-rust.git#d60c44943a012d7a761321f5b27de6a0fc237143"
+source = "git+https://github.com/Esu0/mylib-rust.git#4439a7c7d66ec26115fc0d2ed98138516eea22c3"
 
 [[package]]
 name = "wasi"
