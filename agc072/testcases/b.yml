@@ -1,0 +1,70 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      1 2
+      AC
+    out: |
+      0
+      0
+  - name: sample2
+    in: |
+      5 1
+      CACAAACCCA
+    out: |
+      1
+  - name: sample3
+    in: |
+      10 10
+      ACCCAAAACCCACCACAACA
+    out: |
+      1
+      2
+      3
+      3
+      3
+      3
+      3
+      3
+      3
+      3
+  - name: sample4
+    in: |
+      50 10
+      ACCCCACAACAAAACCAACCCCACCAACACCAAAACACACAAAACCCCCACCAACACAACAACCCCAACAAACCCAACACACCCACACCAAACCCAAACA
+    out: |
+      10
+      17
+      20
+      22
+      23
+      24
+      25
+      26
+      26
+      26
+  - name: sample5
+    in: |
+      72 10
+      CCCCACAAAAACCCACACCAAACCACCCCCAAAAACACCACCCCCAAAAAAACAAAAAACCCCCCACCCAAACAACACCACCACAAACCCAACCAACAACCCAAAACAACCCCACCACACACCACACCCACAAACACAACAACA
+    out: |
+      28
+      42
+      51
+      54
+      57
+      60
+      63
+      64
+      65
+      66
+
+extend:
+  - type: Text
+    path: "./b"
+    in: /in/*.txt
+    out: /out/*.txt

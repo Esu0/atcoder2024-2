@@ -1,0 +1,30 @@
+---
+type: Batch
+timelimit: 4s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      2
+      BWBW
+    out: |
+      1
+  - name: sample2
+    in: |
+      4
+      BWWBWBWB
+    out: |
+      0
+  - name: sample3
+    in: |
+      9
+      BWWBWBBBWWBWBBWWBW
+    out: |
+      240792
+
+extend:
+  - type: Text
+    path: "./c"
+    in: /in/*.txt
+    out: /out/*.txt

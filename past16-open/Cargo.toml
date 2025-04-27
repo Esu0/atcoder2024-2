@@ -81,7 +81,7 @@ name = "past16-open-o"
 path = "src/bin/o.rs"
 
 [dependencies]
-# ac-library-rs = "=0.1.1"
+ac-library-rs = "=0.1.1"
 # once_cell = "=1.18.0"
 # static_assertions = "=1.1.0"
 # varisat = "=0.2.2"
@@ -142,7 +142,8 @@ path = "src/bin/o.rs"
 # text_io = "=0.1.12"
 # rustc-hash = "=1.1.0"
 # smallvec = { version = "=1.11.0", features = ["const_generics", "const_new", "write", "union", "serde", "arbitrary"] }
-# util = { git = "https://github.com/Esu0/mylib-rust.git" }
+util = { git = "https://github.com/Esu0/mylib-rust.git" }
+segtree = { git = "https://github.com/Esu0/mylib-rust.git" }
 proconio = { version = "=0.4.5", features = ["derive"] }
 
 [dev-dependencies]

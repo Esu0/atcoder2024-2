@@ -14,13 +14,13 @@ fn main() {
         adj_list[v - 1].push(u - 1);
     }
     let degrees = adj_list.iter().map(|x| x.len()).collect::<Vec<_>>();
-    for u in 0..n {
-        adj_list[u].sort_unstable_by_key(|&v| Reverse(degrees[v]));
+    for adju in &mut adj_list {
+        adju.sort_unstable_by_key(|&v| Reverse(degrees[v]));
     }
     let mut ans = 0;
-    for u in 0..n {
+    for adju in &adj_list {
         let mut min_deg = usize::MAX;
-        for (i, &v) in adj_list[u].iter().enumerate() {
+        for (i, &v) in adju.iter().enumerate() {
             min_deg = min_deg.min(degrees[v]);
             ans = ans.max(1 + i + 1 + (i + 1) * (min_deg - 1));
         }
