@@ -10,8 +10,8 @@ def random_graph(n, m):
             a, b = b, a
         print(f"{a} {b}")
 
-n = 25000
-m = random.randint(n // 2, n * 4)
+n = 100000
+m = 100000
 q = 100000
 print(f"{n} {m} {q}")
 random_graph(n, m)
