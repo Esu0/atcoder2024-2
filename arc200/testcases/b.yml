@@ -1,0 +1,24 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      3
+      4 3 5
+      1 1 7
+      8 6 11
+    out: |
+      Yes
+      2025 200
+      No
+      Yes
+      20250615 200200
+
+extend:
+  - type: Text
+    path: "./b"
+    in: /in/*.txt
+    out: /out/*.txt
