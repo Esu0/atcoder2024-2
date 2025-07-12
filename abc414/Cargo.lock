@@ -3,11 +3,10 @@
 version = 4
 
 [[package]]
-name = "abc411"
+name = "abc414"
 version = "0.1.0"
 dependencies = [
  "proconio",
- "union-find",
  "util",
 ]
 
@@ -65,11 +64,6 @@ name = "unicode-ident"
 version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5a5f39404a5da50712a4c1eecf25e90dd62b613502b7e925fd4e4d19b5c96512"
-
-[[package]]
-name = "union-find"
-version = "0.1.0"
-source = "git+https://github.com/Esu0/mylib-rust.git#4439a7c7d66ec26115fc0d2ed98138516eea22c3"
 
 [[package]]
 name = "util"
